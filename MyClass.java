@@ -16,8 +16,6 @@ public class MyClass
 		System.out.println(m1.num+"\t"+m2.num);
 		m1.disp();
 		m2.disp();
-		m1.accept(300);
-		m1.disp();
-		m2.disp();
+		
 	}
 }
