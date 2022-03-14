@@ -1,14 +1,14 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 import { Button, Navbar, Nav, Form, NavDropdown, FormControl,Container } from 'react-bootstrap';
+import Searchform from '../components/Searchform';
 
 function Home(){
     return(
-  <div>
-   
-    <h1>Home</h1>
-    
-  </div>
+   <>
+    <Searchform/>
+    <br/>
+  </>
     )
 }
 export default Home;
