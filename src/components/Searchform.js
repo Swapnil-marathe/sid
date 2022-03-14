@@ -1,4 +1,5 @@
 import logo from './images/logo.svg';
+import states from "./data";
 function Searchform() {
     return (
         <div className="container">
@@ -7,15 +8,22 @@ function Searchform() {
             <div className="col-8">
                 <form>
 
-                    <div class="form-group col-md-4">
-                        <label for="inputState">State</label>
-                        <select id="inputState" class="form-control">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                        </select>
+                <div class="form-row">
+                <label for="inputCity">State</label>
+            <select id="state">
+                <option selected>
+                    Select State
+                </option>
+                
+                {
+                    states.States.map((result)=>(<option text={result.Id}>{result.name}</option>))
+                }
+               
+                
+            </select>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group">
                             <label for="inputCity">City</label>
                             <select id="inputCity" class="form-control">
                                 <option selected>Choose City...</option>
@@ -23,11 +31,11 @@ function Searchform() {
                             </select>
                         </div>
 
-                        <div class="form-group col-md-2">
+                        <div class="form-group col-md-4">
                             <label for="inputCin">Check In</label>
                             <input type="date" class="form-control" id="inputCin" />
                         </div>
-                        <div class="form-group col-md-2">
+                        <div class="form-group col-md-4">
                             <label for="inputCout">Check Out</label>
                             <input type="date" class="form-control" id="inputCout" />
                         </div>
@@ -37,7 +45,7 @@ function Searchform() {
                 </form>
             </div>
         <div className="col">
-            <img src={logo}/>
+           
         </div>
 </div>
         </div>

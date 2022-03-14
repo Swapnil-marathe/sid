@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from './images/logo.svg';
 import {Navbar, Nav, NavDropdown, Container} from "react-bootstrap"
 
 const Menu = () => {
@@ -6,7 +7,9 @@ const Menu = () => {
     <div>
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
     <Container>
-    <Navbar.Brand href="/Home">INDIAN HOTELS </Navbar.Brand>
+    <Navbar.Brand href="/Home">
+      <img src={logo} width="40px" height="40px"/>
+      INDIAN HOTELS </Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="me-auto">

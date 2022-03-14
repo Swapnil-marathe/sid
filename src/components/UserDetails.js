@@ -107,19 +107,7 @@ class UserDetails extends Component {
         <Form onSubmit={this.handleSubmit}>
   <Row>
   
-  <Form.Floating className="mb-3">
-    <Form.Control
-    
-      id="floatingAdd1Custom"
-      type="Text"
-      name="Add"
-      value={this.state.input.Add}
-      onChange={this.handleChange}
-      placeholder="House/Flat No."
-    />
-    <label htmlFor="floatingInputCustom">Address 1</label>
-    <div className="text-danger">{this.state.errors.Add}</div>
-  </Form.Floating>
+  
   
   <Form.Floating>
     <Form.Control
