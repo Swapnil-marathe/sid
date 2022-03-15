@@ -2,7 +2,8 @@ import React from 'react';
 import Homes from '../components/images/Home.jpg';
 import Navigation from '../components/Navigation';
 import { Button, Navbar, Nav, Form, NavDropdown, FormControl, Container } from 'react-bootstrap';
-import Searchform from '../components/Searchform';
+//import Searchform from '../components/Searchform';
+import Searchform from '../components/form';
 
 function Home() {
   return (
@@ -12,7 +13,8 @@ function Home() {
       </marquee>
     <div className='row'>
       <div className='col-6'>
-      <Searchform />
+       <Searchform />
+      
       </div>
       <div className='col'>
       

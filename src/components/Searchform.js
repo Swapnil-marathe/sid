@@ -9,7 +9,7 @@ function Searchform() {
                 <form>
 
                 <div class="form-row">
-                <label for="inputCity">State</label>
+                <label for="inputState">State</label>
             <select id="state">
                 <option selected>
                     Select State

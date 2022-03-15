@@ -9,11 +9,11 @@ import About from './pages/AboutUS';
 import NoPage from './pages/NoPage';
 import Login from "./pages/Login";
 import LocationMap from "./pages/LocationMap";
-import Footer from "./components/footer";
+
 import Banner from "./components/Banner";
 import Services from "./components/Services";
 import Menu from "./components/Menu";
-import Stateselect from "./components/select";
+
 function App() {
   return (
     <>

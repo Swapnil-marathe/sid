@@ -1,7 +1,7 @@
 {
     "States":
     [
-        {"Id":"1", "name":"MAHARASHTRA"},
+        {"Id":"1", "name":"MAHARASHTRA" ,"cities":["Nashik","Akola"]},
         {"Id":"2", "name":"KERALA"},
         {"Id":"3", "name":"MP"},
         {"Id":"4", "name":"UP"},
