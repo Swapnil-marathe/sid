@@ -4,6 +4,7 @@ import Navigation from '../components/Navigation';
 import { Button, Navbar, Nav, Form, NavDropdown, FormControl, Container } from 'react-bootstrap';
 //import Searchform from '../components/Searchform';
 import Searchform from '../components/form';
+import DistDropdown from '../components/form1';
 
 function Home() {
   return (
@@ -13,7 +14,7 @@ function Home() {
       </marquee>
     <div className='row'>
       <div className='col-6'>
-       <Searchform />
+       <DistDropdown/>
       
       </div>
       <div className='col'>

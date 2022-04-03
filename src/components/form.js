@@ -7,20 +7,18 @@ class Searchform extends React.Component {
         this.state = {
 
             states: [],
-            cities: [],
-            selectstate: ''
+            cities: []
         };
     }
-    componentDidMount() {
-        this.setState({
-            states: [
-                { Id: 1, name: "MAHARASHTRA", cities: ["Nashik", "Nagpur"] },
-                { Id: 2, name: "MP", cities: ["one", "two"] },
-                { Id: 3, name: "HP", cities: ["three", 'four'] },
-                { Id: 4, name: "AP", cities: ["five", "six"] },
-            ]
 
-        })
+    
+    componentDidMount() {
+        fetch("http://localhost:9090/States")
+            .then(res => res.json())
+            .then((result)=>this.setState(result))
+        
+        
+        
     }
     changeState(e) {
         this.setState({ selectstate: e.target.value });
